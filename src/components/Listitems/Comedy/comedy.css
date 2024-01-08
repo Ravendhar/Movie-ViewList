@@ -1,0 +1,36 @@
+.cardsContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1rem;
+    }
+    
+    .cardImgs{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100vw;
+        max-width: 65rem;
+    }
+    
+    .singleImg{
+        object-fit: cover;
+        height: 20rem;
+        width: 15rem;
+        margin: 0.5rem;
+        padding: 1rem 1rem;
+        text-align: center;
+    }
+    
+    .imgContainer{
+        margin: 4px 4px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-weight: 500;
+        padding: auto;
+    } 
+
+    
