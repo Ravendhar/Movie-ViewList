@@ -8,6 +8,7 @@ import Comedy from "./components/Listitems/Comedy/comedy.js";
 import Scifi from "./components/Listitems/Scifi/scifi.js";
 import Fantasy from "./components/Listitems/Fantasy/fantasy.js";
 import Footer from "./components/Footer/footer.js";
+import LoginSignup from "./components/LoginSignup/loginsignup.js";
 
 function App() {
   console.log("rendering app");
@@ -23,6 +24,7 @@ function App() {
             <Route path="/Comedy" element={<Comedy/>} />
             <Route path="/Scifi" element={<Scifi/>} />
             <Route path="/Fantasy" element={<Fantasy/>} />
+            <Route path="/LoginSignup" element={<LoginSignup/>} />
           </Routes>
         <Footer />  
       </div>

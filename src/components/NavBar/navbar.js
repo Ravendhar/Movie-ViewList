@@ -16,7 +16,7 @@ const Navbar=() => {
         <nav className="navbar">
             <Link activeClass="active" to="/" spy={true} duration={500} ><img src={logo} alt="Logo"  className='logo'/></Link>
             
-            {/* //centre navbar */}
+            {/* centre navbar */}
             <div className="desktopMenu">
                 <Link activeClass="active" to="/" spy={true} duration={500} className="desktopMenuListItem" >Home</Link>
                 <div className="searchcontainer">
@@ -26,17 +26,20 @@ const Navbar=() => {
                     </form>
                 </div>
             </div>
-            <button className="desktopMenuBtn" onClick={()=>{
+            {/* <button className="desktopMenuBtn" onClick={()=>{
                     document.getElementById('contact').scrollIntoView({behavior:'smooth'});
             }}>
                 <img src={contactImg} alt="" className="contactBtn" />Login/Signup
-            </button>
+            </button> */}
+            <div1>
+                <Link activeClass="active" to="/LoginSignup" spy={true} duration={500} className="desktopMenuBtn" >Login  / Signup</Link>
+            </div1>
+            
             <div className="mobMenuContainer">
                 <img src={menu} alt="Menu" className="mobMenu" onClick={()=>setShowMenu(!showMenu)} />
                 <div className="navMenu" style={{display: showMenu?'flex':'none'}}>
-                    <Link activeClass="active" to="intro" spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem" onClick={()=>setShowMenu(false)}>Home</Link>
-                    <Link activeClass="active" to="skills" spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem" onClick={()=>setShowMenu(false)}>About</Link>
-                    <Link activeClass="active" to="projects" spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem" onClick={()=>setShowMenu(false)}>Projects</Link>
+                    <Link activeClass="active" to="/Intro" spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem" onClick={()=>setShowMenu(false)}>Home</Link>
+                    <Link activeClass="active" to="/LoginSignup" spy={true} duration={500} className="desktopMenuBtn" >Login  / Signup</Link>
                 </div>
             </div>
         </nav>

@@ -61,9 +61,10 @@
 }
 
 .desktopMenuBtn{
-    background: whitesmoke;
+    background: rgb(250, 2, 2);
     font-size: medium;
     font-weight: 800;
+    height: 2rem;
     color: black;
     border: none;
     display: flex;
@@ -73,6 +74,7 @@
     border-radius: 2rem; 
     cursor: pointer;
     box-sizing: border-box;
+    mix-blend-mode: color-dodge;
 }
 .desktopMenuBtn:hover{
     border: 4px solid rgb(92, 36, 247); 

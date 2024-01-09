@@ -8,7 +8,9 @@
 }
 
 body{
-    background: rgb(20, 20, 20);
+    background: rgb(40, 39, 39);
+    background: linear-gradient(to bottom,rgb(4, 8, 67), black,  rgb(30,30,30));
+    background: linear-gradient(to right,rgb(19, 67, 4), rgb(16, 5, 81),  rgb(0, 0, 0));
     height: 100%;
     width: 100%;
     color: white;
